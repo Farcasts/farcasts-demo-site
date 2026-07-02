@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
   Standalone third party demo site for the farcasts applier. It is deployed on
-  its OWN Vercel domain, a different origin from exp.farcasts.com, so it exercises
+  its OWN Vercel domain, a different origin from app.farcasts.com, so it exercises
   the real cross origin path (CORS on /api/config and /api/events) exactly as a
   customer site would. Edit projectId below to the project you author in the
   dashboard. The data-cf-hide attribute on <html> plus data-farcasts-gate on each
@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aster, a quieter coffee</title>
   <script>
-    window.__FARCASTS__ = { projectId: "demo_project", endpoint: "https://exp.farcasts.com" };
+    window.__FARCASTS__ = { projectId: "demo_project", endpoint: "https://app.farcasts.com" };
     document.documentElement.setAttribute("data-cf-hide", "");
   </script>
   <style>
@@ -55,7 +55,7 @@
       <h1 id="hero-headline" data-farcasts-gate>A quieter cup for the loud part of the day.</h1>
       <p class="sub" id="hero-sub" data-farcasts-gate>Single origin, slow roasted, and shipped the week it is ready. No haste in the cup.</p>
       <a class="cta" id="hero-cta" href="#shop" data-farcasts-gate>Start your ritual</a>
-      <img class="hero-img" id="hero-image" data-farcasts-gate src="https://exp.farcasts.com/demo/travel-lounge.png" alt="A calm morning pour" />
+      <img class="hero-img" id="hero-image" data-farcasts-gate src="https://app.farcasts.com/demo/travel-lounge.png" alt="A calm morning pour" />
     </section>
 
     <section class="row">
@@ -67,6 +67,6 @@
 
   <footer>Aster Coffee. A demonstration site for farcasts adaptive testing.</footer>
 
-  <script src="https://exp.farcasts.com/farcasts.js"></script>
+  <script src="https://app.farcasts.com/farcasts.js"></script>
 </body>
 </html>
