@@ -32,7 +32,7 @@
     .entry-no { font-family: var(--mono); font-size: 13px; letter-spacing: .1em; color: var(--stamen); padding-top: 6px; }
     .entry-id h3 { margin: 0 0 8px; }
     .entry-id .region { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; color: var(--moss); text-transform: uppercase; }
-    .entry-id .swatch { width: 44px; height: 44px; border: 1px solid var(--line); margin-top: 16px; }
+    .entry-id .swatch { width: 100%; max-width: 150px; aspect-ratio: 5 / 6; border: 1px solid var(--line); margin-top: 16px; object-fit: cover; display: block; }
     .entry-notes p { margin: 0 0 14px; color: var(--moss); font-size: 15px; }
     .entry-spec { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px; margin: 0; }
     .entry-spec dt { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--moss-dim); }
@@ -40,11 +40,6 @@
     .entry-buy { text-align: right; padding-top: 4px; min-width: 130px; }
     .entry-buy .price { font-family: var(--display); font-size: 26px; display: block; margin-bottom: 14px; }
 
-    .sw1 { background: linear-gradient(150deg, #3a4a3c, #232f27); }
-    .sw2 { background: linear-gradient(150deg, #6a5535, #3d3120); }
-    .sw3 { background: linear-gradient(150deg, #4a4152, #2a2632); }
-    .sw4 { background: linear-gradient(150deg, #7a4a3a, #442620); }
-    .sw5 { background: linear-gradient(150deg, #35504f, #1f302f); }
 
     @media (max-width: 900px) {
       .entry { grid-template-columns: 60px 1fr; gap: 14px 18px; }
@@ -97,7 +92,7 @@
           <div class="entry-id">
             <h3 class="display">Dawnline</h3>
             <span class="region">Huila, Colombia</span>
-            <div class="swatch sw1" aria-hidden="true"></div>
+            <img class="swatch" src="assets/lot-dawnline.jpg" alt="Dawnline almanac plate" loading="lazy" />
           </div>
           <div class="entry-notes">
             <p>Soft and rounded, the first cup that does not ask anything of you. Red apple, cane sugar, a finish like cocoa left on the tongue.</p>
@@ -116,7 +111,7 @@
           <div class="entry-id">
             <h3 class="display">Ember Field</h3>
             <span class="region">Yirgacheffe, Ethiopia</span>
-            <div class="swatch sw2" aria-hidden="true"></div>
+            <img class="swatch" src="assets/lot-ember.jpg" alt="Ember Field almanac plate" loading="lazy" />
           </div>
           <div class="entry-notes">
             <p>Bright and floral, the loud one done quietly. Bergamot, white peach, jasmine lifting off the top of the cup.</p>
@@ -135,7 +130,7 @@
           <div class="entry-id">
             <h3 class="display">Nightbloom</h3>
             <span class="region">Antigua, Guatemala</span>
-            <div class="swatch sw3" aria-hidden="true"></div>
+            <img class="swatch" src="assets/lot-nightbloom.jpg" alt="Nightbloom almanac plate" loading="lazy" />
           </div>
           <div class="entry-notes">
             <p>Deep and settled, for the hour you keep after the noise. Dark chocolate, dried plum, a low hum of pipe tobacco.</p>
@@ -154,7 +149,7 @@
           <div class="entry-id">
             <h3 class="display">Halo</h3>
             <span class="region">Nari&ntilde;o, Colombia</span>
-            <div class="swatch sw4" aria-hidden="true"></div>
+            <img class="swatch" src="assets/lot-halo.jpg" alt="Halo almanac plate" loading="lazy" />
           </div>
           <div class="entry-notes">
             <p>Our still hour house lot, and the one on the front page. Honeyed and clear, orange blossom, brown sugar, a long clean finish.</p>
@@ -173,7 +168,7 @@
           <div class="entry-id">
             <h3 class="display">Slate Creek</h3>
             <span class="region">Kirinyaga, Kenya</span>
-            <div class="swatch sw5" aria-hidden="true"></div>
+            <img class="swatch" src="assets/lot-slate.jpg" alt="Slate Creek almanac plate" loading="lazy" />
           </div>
           <div class="entry-notes">
             <p>Structured and juicy, the one that keeps you present. Blackcurrant, grapefruit, a savoury tomato edge under the acidity.</p>

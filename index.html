@@ -73,17 +73,18 @@
     .lot { text-decoration: none; color: inherit; display: block; }
     .lot-swatch {
       aspect-ratio: 5 / 6; border: 1px solid var(--line);
-      display: flex; align-items: flex-end; padding: 18px; position: relative; overflow: hidden;
-      transition: transform .3s ease;
+      position: relative; overflow: hidden; transition: transform .3s ease;
     }
+    .lot-swatch img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .lot:hover .lot-swatch { transform: translateY(-4px); }
-    .lot-swatch .no { position: absolute; top: 16px; left: 18px; font-family: var(--mono); font-size: 11px; letter-spacing: .12em; color: var(--paper); mix-blend-mode: difference; }
-    .lot-name { font-family: var(--display); font-size: 20px; color: var(--paper); }
-    .lot-foot { display: flex; justify-content: space-between; margin-top: 14px; font-family: var(--mono); font-size: 12px; letter-spacing: .04em; }
+    .lot-swatch .no {
+      position: absolute; top: 14px; left: 14px; font-family: var(--mono); font-size: 10px;
+      letter-spacing: .12em; color: var(--paper); background: rgba(28,38,32,.62);
+      padding: 4px 8px; backdrop-filter: blur(2px);
+    }
+    .lot-name { display: block; font-family: var(--display); font-size: 20px; margin-top: 14px; }
+    .lot-foot { display: flex; justify-content: space-between; margin-top: 6px; font-family: var(--mono); font-size: 12px; letter-spacing: .04em; }
     .lot-foot .region { color: var(--moss); }
-    .l1 { background: linear-gradient(160deg, #3a4a3c, #232f27); }
-    .l2 { background: linear-gradient(160deg, #6a5535, #3d3120); }
-    .l3 { background: linear-gradient(160deg, #4a4152, #2a2632); }
 
     @media (max-width: 860px) {
       .hero-grid { grid-template-columns: 1fr; align-items: start; }
@@ -193,15 +194,18 @@
       </div>
       <div class="lots">
         <a class="lot" href="menu.html">
-          <div class="lot-swatch l1"><span class="no">No. 01</span><span class="lot-name">Dawnline</span></div>
+          <div class="lot-swatch"><span class="no">No. 01</span><img src="assets/lot-dawnline.jpg" alt="Dawnline, a coffee branch with ripe cherries at dawn" loading="lazy" /></div>
+          <span class="lot-name">Dawnline</span>
           <div class="lot-foot"><span class="region">Huila, Colombia</span><span>$21</span></div>
         </a>
         <a class="lot" href="menu.html">
-          <div class="lot-swatch l2"><span class="no">No. 02</span><span class="lot-name">Ember Field</span></div>
+          <div class="lot-swatch"><span class="no">No. 02</span><img src="assets/lot-ember.jpg" alt="Ember Field, coffee blossom and floral spray" loading="lazy" /></div>
+          <span class="lot-name">Ember Field</span>
           <div class="lot-foot"><span class="region">Yirgacheffe, Ethiopia</span><span>$23</span></div>
         </a>
         <a class="lot" href="menu.html">
-          <div class="lot-swatch l3"><span class="no">No. 03</span><span class="lot-name">Nightbloom</span></div>
+          <div class="lot-swatch"><span class="no">No. 03</span><img src="assets/lot-nightbloom.jpg" alt="Nightbloom, deep ripe cherries and a dark flower" loading="lazy" /></div>
+          <span class="lot-name">Nightbloom</span>
           <div class="lot-foot"><span class="region">Antigua, Guatemala</span><span>$22</span></div>
         </a>
       </div>
