@@ -33,6 +33,15 @@
 
     .pull { max-width: 22ch; margin: 0; }
 
+    .story-plate { margin-top: clamp(40px, 6vw, 72px); }
+    .story-plate figure { margin: 0; position: relative; border: 1px solid var(--line); }
+    .story-plate img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+    .story-plate figcaption {
+      position: absolute; left: 14px; bottom: 14px;
+      font-family: var(--mono); font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--paper); background: rgba(28,38,32,.62); padding: 6px 10px; backdrop-filter: blur(2px);
+    }
+
     @media (max-width: 820px) {
       .story-lede, .timeline { grid-template-columns: 1fr; }
       .figures { grid-template-columns: 1fr; gap: 32px; }
@@ -72,6 +81,12 @@
           <p>Coffee had gotten loud. Faster, bigger, brighter, more. We wanted the opposite: one farm, one lot, one careful roast, and a cup you could sit inside of.</p>
           <p>So we named it for a flower that opens late, when the light goes long and the day finally quiets down. That hour is the whole brief.</p>
         </div>
+      </div>
+      <div class="story-plate">
+        <figure>
+          <img src="assets/story-farm.jpg" alt="A single origin coffee farm at the quiet hour, terraced rows receding into mist" loading="lazy" />
+          <figcaption>The row it grew in &middot; Nari&ntilde;o, before dusk</figcaption>
+        </figure>
       </div>
     </section>
 
