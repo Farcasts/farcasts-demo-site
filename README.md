@@ -20,7 +20,7 @@ Static, multi page, no build step.
 
 `index.html` carries the whole contract on its gated hero:
 
-- `<script src="https://app.farcasts.com/farcasts.js" data-farcasts-project="demo-farcasts-com">`
+- `<script src="https://app.farcasts.com/farcasts.js" data-cfasync="false" data-farcasts-project="demo-farcasts-com">`
   loads the applier and points it at the project. Onboarding slugs the origin
   hostname, so demo.farcasts.com becomes the project id `demo-farcasts-com`. Do not
   change these values.
